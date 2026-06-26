@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>💰 Personal Budget Tracker</h1>
+
+    <h2>Balance: $0.00</h2>
+<div class="summary">
+    <div class="income-card">
+        <h3>Total Income</h3>
+        <p id="income-value">0.00</p>
+    </div>
+
+    <div class="expense-card">
+        <h3>Total Expenses</h3>
+        <p id="expense-value">0.00</p>
+    </div>
+</div>
+
+    <input type="text" placeholder="Description">
+    <input type="number" placeholder="Amount">
+<select id="category">
+    <option value="🍔 Food">🍔 Food</option>
+    <option value="🚗 Transport">🚗 Transport</option>
+    <option value="💡 Bills">💡 Bills</option>
+    <option value="🎮 Entertainment">🎮 Entertainment</option>
+    <option value="🛒 Shopping">🛒 Shopping</option>
+    <option value="💰 Salary">💰 Salary</option>
+    <option value="🏠 Rent">🏠 Rent</option>
+</select>
+    <button>Add Transaction</button>
+<input type="text" id="searchInput" placeholder="Search transactions...">
+    <h3>Transactions</h3>
+<ul>
+</ul>
+<h3>Spending by Category</h3>
+<canvas id="expenseChart"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
